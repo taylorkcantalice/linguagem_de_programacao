@@ -1,6 +1,6 @@
 /**
  ============================================================================
- Nome      : ExercicioC-2 - questao3.cpp
+ Nome      : ExercicioC++_2_questao3.cpp
  Autor     : Taylor Klaus Cantalice Nobrega - 20200004268
  Versao    : 1.0
  Descricao : Sistema Inteligente - Identificação de Aves - Vídeo

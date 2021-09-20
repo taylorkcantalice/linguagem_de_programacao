@@ -1,6 +1,6 @@
 /**
  ============================================================================
- Nome      : ExercicioC-2 - questao5.cpp
+ Nome      : ExercicioC++_2_questao5.cpp
  Autor     : Taylor Klaus Cantalice Nobrega - 20200004268
  Versao    : 1.0
  Descricao : [OO] Classe Pessoa - 01

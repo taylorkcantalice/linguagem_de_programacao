@@ -1,6 +1,6 @@
 /**
  ============================================================================
- Nome      : ExercicioC-2 - questao4.cpp
+ Nome      : ExercicioC++_2_questao4.cpp
  Autor     : Taylor Klaus Cantalice Nobrega - 20200004268
  Versao    : 1.0
  Descricao : [OO] Classe Data - 01
