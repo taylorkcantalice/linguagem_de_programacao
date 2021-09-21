@@ -416,8 +416,6 @@ void AtualizaProduto(tProdutos *Prod){
     bool continuarAtualizar = true;
     bool produtoEncontrado;
 
-
-
     while(continuarAtualizar){
         limparTela();
         cout << "Temos os seguintes produtos em nosso estoque!" << endl;
