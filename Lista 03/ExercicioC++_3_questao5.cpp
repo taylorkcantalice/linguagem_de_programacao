@@ -80,8 +80,8 @@ int main(){
                 por_hora = TrabalhadorPorHora(valorDaHora);
                 por_hora.set_nome(nome);
 
-                std::cout << por_hora.get_nome() << " - Semanal: R$ " << por_hora.calcularPagamentoSemanal(horasSemanais) << 
-                             " - Mensal: R$ " << por_hora.get_salario() << std::endl;
+                std::cout << por_hora.get_nome() << " - Semanal: R$ " << por_hora.calcularPagamentoSemanal(horasSemanais);
+                std::cout << " - Mensal: R$ " << por_hora.get_salario() << std::endl;
                 break;
         }
     }
