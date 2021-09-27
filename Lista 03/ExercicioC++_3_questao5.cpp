@@ -35,7 +35,6 @@ class TrabalhadorPorHora : public Trabalhador{
 public:
     TrabalhadorPorHora(float valorDaHora){ this->valorDaHora = valorDaHora; }
     float calcularPagamentoSemanal(int horasSemanais){
-        float valor;
         if(horasSemanais > 40){
             salario = (((horasSemanais-40)*1.5)+40) * valorDaHora * 4;
         } else {
@@ -66,17 +65,18 @@ int main(){
                 assalariado.set_nome(nome);
                 assalariado.set_salario(salario);
 
-                std::cout << assalariado.get_nome() << " - Semanal: R$ " << assalariado.calcularPagamentoSemanal() << " - Mensal: R$ " <<
-                             assalariado.get_salario() << std::endl;
+                std::cout << assalariado.get_nome() << " - Semanal: R$ " << assalariado.calcularPagamentoSemanal() << 
+                             " - Mensal: R$ " << assalariado.get_salario() << std::endl;
                 break;
             case 2:
                 std::cin >> valorDaHora >> horasSemanais;
 
                 por_hora = TrabalhadorPorHora(valorDaHora);
                 por_hora.set_nome(nome);
+                por_hora.set_salario(por_hora.calcularPagamentoSemanal(horasSemanais)*4);
 
-                std::cout << por_hora.get_nome() << " - Semanal: R$ " << por_hora.calcularPagamentoSemanal(horasSemanais) << " - Mensal: R$ " <<
-                             por_hora.calcularPagamentoSemanal(horasSemanais)*4 << std::endl;
+                std::cout << por_hora.get_nome() << " - Semanal: R$ " << por_hora.calcularPagamentoSemanal(horasSemanais) << 
+                             " - Mensal: R$ " << por_hora.TrabalhadorPorHora::get_salario() << std::endl;
                 break;
         }
     }
