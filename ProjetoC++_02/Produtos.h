@@ -1,6 +1,7 @@
 #ifndef BASE_V3
 #define BASE_V3
 
+#include <iostream>
 #include <string>
 #include <vector>
 

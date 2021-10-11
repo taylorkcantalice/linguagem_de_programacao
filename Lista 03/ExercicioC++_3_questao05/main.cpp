@@ -1,7 +1,11 @@
 #include <iostream>
+
 #include "Trabalhador.h"
+#include "Trabalhador.cpp"
 #include "TrabalhadorAssalariado.h"
+#include "TrabalhadorAssalariado.cpp"
 #include "TrabalhadorPorHora.h"
+#include "TrabalhadorPorHora.cpp"
 
 using namespace std;
 
