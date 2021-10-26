@@ -1,13 +1,9 @@
 #ifndef FUNCIONARIO
 #define FUNCIONARIO
 
-#include "Assalariado.h"
-#include "Horista.h"
-#include "Comissionado.h"
-
 #include <string>
 
-class Funcionario : public Assalariado, public Horista, public Comissionado{
+class Funcionario{
     std::string nome;
     int matricula;
 public:

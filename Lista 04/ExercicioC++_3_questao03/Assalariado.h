@@ -1,7 +1,9 @@
 #ifndef ASSALARIADO
 #define ASSALARIADO
 
-class Assalariado{
+#include "Funcionario.h"
+
+class Assalariado : public Funcionario{
 protected:
     double salario;
 public:

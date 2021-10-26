@@ -1,7 +1,9 @@
 #ifndef COMISSIONADO
 #define COMISSIONADO
 
-class Comissionado{
+#include "Funcionario.h"
+
+class Comissionado : public Funcionario{
 protected:
     double vendasMensais;
     double percentualComissao;

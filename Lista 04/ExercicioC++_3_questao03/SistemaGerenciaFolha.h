@@ -7,7 +7,7 @@
 #include <vector>
 
 class SistemaGerenciaFolha{
-    Funcionario funcionarios;
+    vector <Funcionario*> funcionarios;
 public:
     SistemaGerenciaFolha();
 

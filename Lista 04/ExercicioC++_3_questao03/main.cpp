@@ -16,6 +16,10 @@
 using namespace std;
 
 int main(){
+    vector <Assalariado*> func;
+
+    func.push_back(new Assalariado());
+    func[0].
     
     return 0;
 }

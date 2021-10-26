@@ -1,7 +1,9 @@
 #ifndef HORISTA
 #define HORISTA
 
-class Horista{
+#include "Funcionario.h"S
+
+class Horista : public Funcionario{
 protected:
     double salarioPorHora;
     double horasTrabalhadas;
