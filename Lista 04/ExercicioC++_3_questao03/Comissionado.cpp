@@ -1,6 +1,6 @@
 #include "Comissionado.h"
 
-Comissionado::Comissionado(){ vendasMensais = percentualComissao = 0; }
+Comissionado::Comissionado() : Funcionario() { vendasMensais = percentualComissao = 0; }
 Comissionado::Comissionado(double vendasSemanais, double percentualComissao, std::string nome, int matricula)
         : Funcionario(nome, matricula){
     this->vendasMensais = vendasSemanais;

@@ -11,7 +11,7 @@ public:
     Comissionado();
     Comissionado(double vendasMensais, double percentualComissao, std::string nome, int matricula);
 
-    double calcularSalario();
+    virtual double calcularSalario() override;
     
     double get_vendasMensais();
     double get_percentualComissao();

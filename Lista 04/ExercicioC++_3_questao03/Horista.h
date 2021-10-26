@@ -1,7 +1,7 @@
 #ifndef HORISTA
 #define HORISTA
 
-#include "Funcionario.h"S
+#include "Funcionario.h"
 
 class Horista : public Funcionario{
 protected:
@@ -11,7 +11,7 @@ public:
     Horista();
     Horista(double salarioPorHora, double horasTrabalhadas, std::string nome, int matricula);
 
-    double calcularSalario();
+    virtual double calcularSalario() override;
 
     double get_salarioPorHora();
     double get_horasTrabalhadas();

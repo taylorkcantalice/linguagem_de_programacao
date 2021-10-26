@@ -10,7 +10,7 @@ public:
     Funcionario();
     Funcionario(std::string nome, int matricula);
 
-    double calcularSalario();
+    virtual double calcularSalario() = 0;
 
     std::string get_nome();
     int get_matricula();

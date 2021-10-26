@@ -7,7 +7,7 @@ Funcionario::Funcionario(std::string nome, int matricula){
 }
 
 double Funcionario::calcularSalario(){
-
+    
 }
 
 std::string Funcionario::get_nome(){ return nome; }
