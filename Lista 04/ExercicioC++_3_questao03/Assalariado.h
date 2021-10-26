@@ -8,7 +8,7 @@ protected:
     double salario;
 public:
     Assalariado();
-    Assalariado(double salario);
+    Assalariado(double salario,std::string nome, int matricula);
 
     double calcularSalario();
 

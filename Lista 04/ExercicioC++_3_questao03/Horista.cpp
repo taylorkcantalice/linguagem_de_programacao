@@ -1,7 +1,8 @@
 #include "Horista.h"
 
 Horista::Horista(){ salarioPorHora = horasTrabalhadas = 0; }
-Horista::Horista(double salarioPorHora, double horasTrabalhadas){
+Horista::Horista(double salarioPorHora, double horasTrabalhadas, std::string nome, int matricula)
+        : Funcionario(nome, matricula){
     this->salarioPorHora = salarioPorHora;
     this->horasTrabalhadas = horasTrabalhadas;
 }

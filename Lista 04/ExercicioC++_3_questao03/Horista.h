@@ -9,7 +9,7 @@ protected:
     double horasTrabalhadas;
 public:
     Horista();
-    Horista(double salarioPorHora, double horasTrabalhadas);
+    Horista(double salarioPorHora, double horasTrabalhadas, std::string nome, int matricula);
 
     double calcularSalario();
 
