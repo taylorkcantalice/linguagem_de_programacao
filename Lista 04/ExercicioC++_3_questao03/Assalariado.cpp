@@ -1,7 +1,8 @@
 #include "Assalariado.h"
 
 Assalariado::Assalariado() : Funcionario() { salario = 0; }
-Assalariado::Assalariado(double salario, std::string nome, int matricula)
+
+Assalariado::Assalariado(std::string nome, int matricula, double salario)
         : Funcionario(nome, matricula){ 
             this->salario = salario;
 }

@@ -1,13 +1,16 @@
 #include "Funcionario.h"
 
-Funcionario::Funcionario(){ }
+Funcionario::Funcionario(){
+    nome = "";
+    matricula = 0;
+}
 Funcionario::Funcionario(std::string nome, int matricula){
     this->nome = nome;
     this->matricula = matricula;
 }
 
 double Funcionario::calcularSalario(){
-    
+    return 0;
 }
 
 std::string Funcionario::get_nome(){ return nome; }

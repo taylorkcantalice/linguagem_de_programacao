@@ -1,7 +1,8 @@
 #include "Comissionado.h"
 
 Comissionado::Comissionado() : Funcionario() { vendasMensais = percentualComissao = 0; }
-Comissionado::Comissionado(double vendasSemanais, double percentualComissao, std::string nome, int matricula)
+
+Comissionado::Comissionado(std::string nome, int matricula, double vendasSemanais, double percentualComissao)
         : Funcionario(nome, matricula){
     this->vendasMensais = vendasSemanais;
     this->percentualComissao = percentualComissao;
@@ -13,4 +14,6 @@ double Comissionado::get_vendasMensais(){ return vendasMensais; }
 double Comissionado::get_percentualComissao(){ return percentualComissao; }
 
 void Comissionado::set_vendasMensais(double vendasMensais){ this->vendasMensais = vendasMensais; }
-void Comissionado::set_percentualComissao(double percentualComissao){ this->percentualComissao = percentualComissao;}
+void Comissionado::set_percentualComissao(double percentualComissao){ 
+    this->percentualComissao = percentualComissao; 
+}

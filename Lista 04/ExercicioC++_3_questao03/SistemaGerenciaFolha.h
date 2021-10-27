@@ -5,9 +5,10 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 
 class SistemaGerenciaFolha{
-    vector <Funcionario*> funcionarios;
+    std::vector <Funcionario*> funcionarios;
     double orcamento_maximo;
 public:
     SistemaGerenciaFolha();

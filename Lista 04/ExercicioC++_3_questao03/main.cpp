@@ -36,19 +36,19 @@ int main(){
     getline(cin, nome);
     cin >> matricula >> salario;
     cin.ignore();
-    funcionario = new Assalariado(salario, nome, matricula);
+    funcionario = new Assalariado(nome, matricula, salario);
     sistema.set_funcionarios(funcionario);
 
     getline(cin, nome);
     cin >> matricula >> salarioPorHora >> horasTrabalhadas;
     cin.ignore();
-    funcionario = new Horista(salarioPorHora, horasTrabalhadas, nome, matricula);
+    funcionario = new Horista(nome, matricula, salarioPorHora, horasTrabalhadas);
     sistema.set_funcionarios(funcionario);
 
     getline(cin, nome);
     cin >> matricula >> vendasMensais >> percentualComissao;
     cin.ignore();
-    funcionario = new Comissionado(vendasMensais, percentualComissao, nome, matricula);
+    funcionario = new Comissionado(nome, matricula, vendasMensais, percentualComissao);
     sistema.set_funcionarios(funcionario);
 
     for(int i = 0; i < 3; i++){
@@ -56,14 +56,14 @@ int main(){
         if(sistema.consultaSalarioFuncionario(nome) != 0){
             cout << sistema.consultaSalarioFuncionario(nome) << endl;
         } else {
-            cout << "FuncionarioNaoExisteException" << endl;
+            cout << "FuncionarioNaoExisteException " << nome << endl;
         }
     }
 
     if(sistema.calcularValorTotalFolha() <= sistema.get_orcamento_maximo()){
         cout << sistema.calcularValorTotalFolha() << endl;
     } else {
-        cout << "OrcamentoEstouradoException" << sistema.calcularValorTotalFolha() << endl;
+        cout << "OrcamentoEstouradoException " << sistema.calcularValorTotalFolha() << endl;
     }
     
     return 0;

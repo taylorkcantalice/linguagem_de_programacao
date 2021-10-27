@@ -8,7 +8,7 @@ protected:
     double salario;
 public:
     Assalariado();
-    Assalariado(double salario, std::string nome, int matricula);
+    Assalariado(std::string nome, int matricula, double salario);
 
     virtual double calcularSalario() override;
 

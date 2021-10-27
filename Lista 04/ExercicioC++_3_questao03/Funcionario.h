@@ -1,6 +1,8 @@
 #ifndef FUNCIONARIO
 #define FUNCIONARIO
 
+#include <iostream>
+#include <vector>
 #include <string>
 
 class Funcionario{

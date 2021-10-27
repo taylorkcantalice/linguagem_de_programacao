@@ -9,7 +9,7 @@ protected:
     double percentualComissao;
 public:
     Comissionado();
-    Comissionado(double vendasMensais, double percentualComissao, std::string nome, int matricula);
+    Comissionado(std::string nome, int matricula, double vendasSemanais, double percentualComissao);
 
     virtual double calcularSalario() override;
     
