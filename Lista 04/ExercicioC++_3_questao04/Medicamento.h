@@ -9,9 +9,8 @@ class Medicamento : public Insumo{
     std::string disponibilizacao;
 public:
     Medicamento();
-    Medicamento(std::string nome, int quantidade, int valorUnitario, std::string dtVencimento, 
-                std::string nomeFabricante, int tipoInsumo, std::string dosagem, std::string administracao,
-                std::string disponibilizacao);
+    Medicamento(std::string nome, int quantidade, int valorUnitario, std::string dtVencimento, std::string dtAdquirida,
+        std::string nomeFabricante, std::string dosagem, std::string administracao, std::string disponibilizacao);
     ~Medicamento();
     
     std::string get_dosagem();
