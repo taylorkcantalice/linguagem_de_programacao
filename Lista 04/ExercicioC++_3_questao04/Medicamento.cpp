@@ -2,9 +2,9 @@
 
 Medicamento::Medicamento() : Insumo(){ }
 
-Medicamento::Medicamento(std::string nome, int quantidade, int valorUnitario, std::string dtVencimento, std::string dtAdquirida,
-    std::string nomeFabricante, std::string dosagem, std::string administracao, std::string disponibilizacao) 
-    : Insumo(nome, quantidade, valorUnitario, dtVencimento, dtAdquirida, nomeFabricante){
+Medicamento::Medicamento(std::string nome, int quantidade, int valorUnitario, std::string dtVencimento,
+    std::string nomeFabricante, int tipoInsumo, std::string dosagem, std::string administracao, std::string disponibilizacao) 
+    : Insumo(nome, quantidade, valorUnitario, dtVencimento, nomeFabricante, tipoInsumo){
         this->dosagem = dosagem;
         this->administracao = administracao;
         this->disponibilizacao = disponibilizacao;

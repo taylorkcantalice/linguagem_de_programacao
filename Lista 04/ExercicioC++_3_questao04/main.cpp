@@ -19,10 +19,10 @@ int main(){
     int quantidade;
     int valorUnitario;
     string dtVencimento;
-    string dtAdquirida;
     string nomeFabricante;
+    int tipoInsumo;
 
-    string tipo;
+    int tipo;
     int quantDoses;
     int intervalo;
 
@@ -30,24 +30,24 @@ int main(){
     string administracao;
     string disponibilizacao;
 
-    //string tipo;
+    //int tipo;
     string descricao;
 
     Local local;
-    Insumo *insumo;
 
     getline(cin, nome);
     cin >> quantidade >> valorUnitario;
     cin.ignore();
     getline(cin, dtVencimento);
-    getline(cin, dtAdquirida);
     getline(cin, nomeFabricante);
-    getline(cin, tipo);
+    getline(cin, nome);
+    getline(cin, nome);
     cin >> quantDoses >> intervalo;
     cin.ignore();
-    insumo = new Vacina(nome, quantidade, valorUnitario, dtVencimento, dtAdquirida, nomeFabricante, tipo, quantDoses, intervalo);
-    local.addInsumoArr(*insumo, 0);
-    local.addInsumoVec(insumo);
+    local.addInsumoArr( new Vacina(nome, quantidade, valorUnitario, dtVencimento,
+                           nomeFabricante, tipoInsumo, tipo, quantDoses, intervalo), 0);
+    local.addInsumoVec( new Vacina(nome, quantidade, valorUnitario, dtVencimento,
+                           nomeFabricante, tipoInsumo, tipo, quantDoses, intervalo));
 
     cout << endl;
 
@@ -55,14 +55,15 @@ int main(){
     cin >> quantidade >> valorUnitario;
     cin.ignore();
     getline(cin, dtVencimento);
-    getline(cin, dtAdquirida);
     getline(cin, nomeFabricante);
+    getline(cin, nome);
     getline(cin, dosagem);
     getline(cin, administracao);
     getline(cin, disponibilizacao);
-    insumo = new Medicamento(nome, quantidade, valorUnitario, dtVencimento, dtAdquirida, nomeFabricante, dosagem, administracao, disponibilizacao);
-    local.addInsumoArr(*insumo, 1);
-    local.addInsumoVec(insumo);
+    local.addInsumoArr( new Medicamento(nome, quantidade, valorUnitario, dtVencimento,
+                           nomeFabricante, tipoInsumo, dosagem, administracao, disponibilizacao), 1);
+    local.addInsumoVec( new Medicamento(nome, quantidade, valorUnitario, dtVencimento,
+                           nomeFabricante, tipoInsumo, dosagem, administracao, disponibilizacao));
 
     cout << endl;
 
@@ -70,13 +71,13 @@ int main(){
     cin >> quantidade >> valorUnitario;
     cin.ignore();
     getline(cin, dtVencimento);
-    getline(cin, dtAdquirida);
     getline(cin, nomeFabricante);
-    getline(cin, tipo);
+    getline(cin, nome);
     getline(cin, descricao);
-    insumo = new EPI(nome, quantidade, valorUnitario, dtVencimento, dtAdquirida, nomeFabricante, tipo, descricao);
-    local.addInsumoArr(*insumo, 2);
-    local.addInsumoVec(insumo);
+    local.addInsumoArr( new EPI(nome, quantidade, valorUnitario, dtVencimento,
+                           nomeFabricante, tipoInsumo, tipo, descricao), 2);
+    local.addInsumoVec( new EPI(nome, quantidade, valorUnitario, dtVencimento,
+                           nomeFabricante, tipoInsumo, tipo, descricao));
 
     cout << endl;
 

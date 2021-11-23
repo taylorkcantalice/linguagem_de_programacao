@@ -7,22 +7,22 @@
 
 class Local{
     std::string nome;
-    std::string tipo;
-    Insumo *InsumorArr = new Insumo[3];
+    int tipo;
+    Insumo *InsumorArr[3];
     std::vector <Insumo*> InsumosVec;
 public:
     Local();
-    Local(std::string nome, std::string tipo);
-    ~Local();
+    Local(std::string nome, int tipo);
+    virtual ~Local();
 
-    void addInsumoArr(Insumo in, int index);
+    void addInsumoArr(Insumo *in, int index);
     void addInsumoVec(Insumo *in);
 
     std::string get_nome();
-    std::string get_tipo();
+    int get_tipo();
 
     void set_nome(std::string nome);
-    void set_tipo(std::string tipo);
+    void set_tipo(int tipo);
 };
 
 #endif
