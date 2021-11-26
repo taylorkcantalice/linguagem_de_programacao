@@ -49,7 +49,6 @@ int main(){
     local.addInsumoVec( new Vacina(nome, quantidade, valorUnitario, dtVencimento,
                            nomeFabricante, tipoInsumo, tipo, quantDoses, intervalo));
 
-    cout << endl;
 
     getline(cin, nome);
     cin >> quantidade >> valorUnitario;
@@ -65,7 +64,6 @@ int main(){
     local.addInsumoVec( new Medicamento(nome, quantidade, valorUnitario, dtVencimento,
                            nomeFabricante, tipoInsumo, dosagem, administracao, disponibilizacao));
 
-    cout << endl;
 
     getline(cin, nome);
     cin >> quantidade >> valorUnitario;
@@ -78,8 +76,6 @@ int main(){
                            nomeFabricante, tipoInsumo, tipo, descricao), 2);
     local.addInsumoVec( new EPI(nome, quantidade, valorUnitario, dtVencimento,
                            nomeFabricante, tipoInsumo, tipo, descricao));
-
-    cout << endl;
 
     return 0;
 }
